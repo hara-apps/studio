@@ -112,7 +112,7 @@ footer button{flex:1}
 const tg = window.Telegram && window.Telegram.WebApp;
 try { if (tg) { tg.ready(); tg.expand(); } } catch (e) {}
 const Q = new URLSearchParams(location.search);
-const API = (Q.get('api') || 'https://hara-search.laynenorstrud.workers.dev').replace(/\/+$/, '');
+const API = (Q.get('api') || 'https://rtc.harma.cc').replace(/\/+$/, '');
 const BASE = (Q.get('pdf') || '').replace(/\/+$/, '');
 const NUM = parseInt(Q.get('p') || '0', 10);
 const NS = Q.get('ns') || '';
